@@ -28,6 +28,8 @@ eureka:
   client:
     service-url:
       default-zone: http://localhost:8081/eureka
+  instance:
+    instance-id: ${spring.application.name}:${random.int}
 
 server:
   port: 0 # setup a random port
