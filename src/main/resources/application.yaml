@@ -18,3 +18,16 @@ spring:
     user: ${DB_USERNAME}
     password: ${DB_PASSWORD}
     url: jdbc:postgresql://localhost:5432/kofood-pedidos
+
+  application:
+    name: pedidos-ms
+
+
+
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:8081/eureka
+
+server:
+  port: 0 # setup a random port
