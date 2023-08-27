@@ -6,6 +6,7 @@ import br.com.kofood.pedido.dto.StatusDto
 import br.com.kofood.pedido.service.OrdersService
 import org.springframework.beans.factory.annotation.Value
 import org.springframework.data.domain.Pageable
+import org.springframework.data.web.PageableDefault
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.*
 import org.springframework.web.util.UriComponentsBuilder
@@ -30,7 +31,7 @@ class OrdersController(
 
 
     @GetMapping
-    fun list(page: Pageable) = ResponseEntity.ok().body(service.getAll(page))
+    fun list(@PageableDefault(size = 10) page: Pageable) = ResponseEntity.ok().body(service.getAll(page))
 
     @GetMapping("/{id}")
     fun show(@PathVariable id: Long) = ResponseEntity.ok().body(service.getById(id))
