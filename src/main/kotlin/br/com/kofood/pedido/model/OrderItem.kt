@@ -14,8 +14,10 @@ data class OrderItem(
 
     @NotNull
     @Positive
+    @Column(name = "quantidade")
     val quantity: Int,
 
+    @Column(name="descricao")
     val description: String,
 
     @ManyToOne(optional = false)
