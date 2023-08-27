@@ -23,11 +23,10 @@ spring:
     name: pedidos-ms
 
 
-
 eureka:
   client:
-    service-url:
-      default-zone: http://localhost:8081/eureka
+    serviceUrl:
+      defaultZone: http://localhost:8081/eureka
   instance:
     instance-id: ${spring.application.name}:${random.int}
 
