@@ -1,10 +1,7 @@
-package br.com.kofood.pedido.repository
+package br.com.kofood.pedidos.repository
 
-import br.com.kofood.pedido.model.Order
-import br.com.kofood.pedido.model.Status
-import jakarta.transaction.Transactional
+import br.com.kofood.pedidos.model.Order
 import org.springframework.data.jpa.repository.JpaRepository
-import org.springframework.data.jpa.repository.Modifying
 import org.springframework.data.jpa.repository.Query
 import java.util.*
 

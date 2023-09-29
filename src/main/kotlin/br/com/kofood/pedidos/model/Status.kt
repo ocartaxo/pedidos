@@ -1,4 +1,4 @@
-package br.com.kofood.pedido.model
+package br.com.kofood.pedidos.model
 
 enum class Status {
     ACCOMPLISHED,

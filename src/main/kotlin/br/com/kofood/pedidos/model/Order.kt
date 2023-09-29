@@ -1,4 +1,4 @@
-package br.com.kofood.pedido.model
+package br.com.kofood.pedidos.model
 
 import jakarta.persistence.*
 import jakarta.validation.constraints.NotNull

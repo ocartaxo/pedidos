@@ -1,11 +1,11 @@
-package br.com.kofood.pedido.service
+package br.com.kofood.pedidos.service
 
-import br.com.kofood.pedido.dto.OrderRequest
-import br.com.kofood.pedido.dto.OrderResponse
-import br.com.kofood.pedido.dto.StatusDto
-import br.com.kofood.pedido.mapper.OrdersMapper
-import br.com.kofood.pedido.model.Status
-import br.com.kofood.pedido.repository.OrdersRepository
+import br.com.kofood.pedidos.dto.OrderRequest
+import br.com.kofood.pedidos.dto.OrderResponse
+import br.com.kofood.pedidos.dto.StatusDto
+import br.com.kofood.pedidos.mapper.OrdersMapper
+import br.com.kofood.pedidos.model.Status
+import br.com.kofood.pedidos.repository.OrdersRepository
 import jakarta.persistence.EntityNotFoundException
 import org.springframework.data.domain.Pageable
 import org.springframework.stereotype.Service

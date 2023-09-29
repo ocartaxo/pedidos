@@ -1,10 +1,10 @@
-package br.com.kofood.pedido.mapper
+package br.com.kofood.pedidos.mapper
 
-import br.com.kofood.pedido.dto.OrderItemDto
-import br.com.kofood.pedido.dto.OrderRequest
-import br.com.kofood.pedido.dto.OrderResponse
-import br.com.kofood.pedido.model.Order
-import br.com.kofood.pedido.model.OrderItem
+import br.com.kofood.pedidos.dto.OrderItemDto
+import br.com.kofood.pedidos.dto.OrderRequest
+import br.com.kofood.pedidos.dto.OrderResponse
+import br.com.kofood.pedidos.model.Order
+import br.com.kofood.pedidos.model.OrderItem
 import org.springframework.stereotype.Component
 
 @Component

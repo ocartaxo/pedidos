@@ -1,6 +1,6 @@
-package br.com.kofood.pedido.dto
+package br.com.kofood.pedidos.dto
 
-import br.com.kofood.pedido.model.Status
+import br.com.kofood.pedidos.model.Status
 import com.fasterxml.jackson.annotation.JsonProperty
 import java.time.LocalDateTime
 

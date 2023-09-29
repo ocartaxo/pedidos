@@ -1,9 +1,9 @@
-package br.com.kofood.pedido.http
+package br.com.kofood.pedidos.controller
 
-import br.com.kofood.pedido.dto.OrderRequest
-import br.com.kofood.pedido.dto.OrderResponse
-import br.com.kofood.pedido.dto.StatusDto
-import br.com.kofood.pedido.service.OrdersService
+import br.com.kofood.pedidos.dto.OrderRequest
+import br.com.kofood.pedidos.dto.OrderResponse
+import br.com.kofood.pedidos.dto.StatusDto
+import br.com.kofood.pedidos.service.OrdersService
 import org.springframework.beans.factory.annotation.Value
 import org.springframework.data.domain.Pageable
 import org.springframework.data.web.PageableDefault

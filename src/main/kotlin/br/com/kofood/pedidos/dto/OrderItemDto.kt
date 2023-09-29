@@ -1,4 +1,4 @@
-package br.com.kofood.pedido.dto
+package br.com.kofood.pedidos.dto
 
 import com.fasterxml.jackson.annotation.JsonProperty
 

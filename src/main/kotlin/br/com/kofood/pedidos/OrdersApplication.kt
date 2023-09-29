@@ -1,4 +1,4 @@
-package br.com.kofood.pedido
+package br.com.kofood.pedidos
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
