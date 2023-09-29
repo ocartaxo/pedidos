@@ -1,9 +1,12 @@
 spring:
+  application:
+    name: pedidos-ms
+
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5432/kofood-pedidos
-    username: ${DB_USERNAME}
-    password: ${DB_PASSWORD}
+    url: jdbc:postgresql://postgres:root@localhost:32771/kofood-pedidos
+    username: postgres
+    password: root
 
 
   jpa:
@@ -15,13 +18,15 @@ spring:
 
   flyway:
     driver-class-name: org.postgresql.Driver
-    user: ${DB_USERNAME}
-    password: ${DB_PASSWORD}
-    url: jdbc:postgresql://localhost:5432/kofood-pedidos
+    user: postgres
+    password: root
+    url: jdbc:postgresql://postgres:root@localhost:32771/kofood-pedidos
 
-  application:
-    name: pedidos-ms
-
+  rabbitmq:
+    username: kofood
+    password: kofood
+    host: localhost
+    port: 5672
 
 eureka:
   client:
@@ -29,6 +34,7 @@ eureka:
       defaultZone: http://localhost:8081/eureka
   instance:
     instance-id: ${spring.application.name}:${random.int}
+
 
 server:
   port: 0 # setup a random port
