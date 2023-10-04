@@ -45,7 +45,10 @@ class OrdersController(
         @RequestBody newStatus: StatusDto
     ) = ResponseEntity.ok().body(service.updateStatus(id, newStatus))
 
-    @PutMapping("/{id}/pago")
+    @PutMapping("/{id}/pagar")
     fun approvePayment(@PathVariable id: Long) = ResponseEntity.ok().body(service.approvePayment(id))
+
+    @PutMapping("/{id}/cancelar")
+    fun cancelPayment(@PathVariable id: Long) = ResponseEntity.ok().body(service.cancelPayment(id))
 
 }
