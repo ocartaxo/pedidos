@@ -52,4 +52,12 @@ class OrdersService(
         o.status = Status.PAID_OUT
 
     }
+
+    fun cancelPayment(id: Long){
+        val o = repository.getOrderByIdWithItems(id)
+            .orElseThrow { EntityNotFoundException("Pedido não encontrado!") }
+
+
+        o.status = Status.CANCELED
+    }
 }
